@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Redirect } from "react-router";
-import { selectIsLoggedIn, login } from "../../features/user/userSlice";
-import logo from "../../assets/images/logo.png";
-import googleLogo from "../../assets/images/logo-google.png";
-import facebookLogo from "../../assets/images/logo-facebook.png";
+import { selectIsLoggedIn, login } from "@/features/user/userSlice";
+import logo from "@images/logo.png";
+import googleLogo from "@images/logo-google.png";
+import facebookLogo from "@images/logo-facebook.png";
 import { useHistory } from "react-router-dom";
 import styles from "./index.module.css";
 import PhoneInput from "react-phone-input-2";
@@ -67,7 +67,10 @@ export default function Login() {
           <img src={facebookLogo} alt="Facebook icon" width="30" />
           <span style={{ flex: "1 auto" }}>Continue with Facebook</span>
         </button>
-        <button onClick={doNothing} className={`${styles.button} ${styles.socialButton}`}>
+        <button
+          onClick={doNothing}
+          className={`${styles.button} ${styles.socialButton}`}
+        >
           <img src={googleLogo} alt="Google icon" width="30" />
           <span style={{ flex: "1 auto" }}>Continue with Google</span>
         </button>

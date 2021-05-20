@@ -1,8 +1,8 @@
-import React from 'react';
-import RestaurantCard from '../components/RestaurantCard';
-import logo from './../assets/images/logo.png';
+import React from "react";
+import RestaurantCard from "@components/RestaurantCard";
+import logo from "@images/logo.png";
 
-export default function Home(){
+export default function Home() {
   return (
     <div style={styles.container}>
       <img src={logo} alt="logo" width="60" />
@@ -14,17 +14,17 @@ export default function Home(){
         </div>
       </div>
     </div>
-  ); 
+  );
 }
 
 const styles = {
   container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
   },
   column: {
-    width: 300
-  }
-}
+    width: 300,
+  },
+};

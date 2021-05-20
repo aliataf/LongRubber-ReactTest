@@ -1,6 +1,6 @@
 import React from 'react';
 import Rate from './Rate';
-import imageHolder from './../assets/images/image-holder.png';
+import imageHolder from '@images/image-holder.png';
 
 export default function RestaurantCard(){
   return (

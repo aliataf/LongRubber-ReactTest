@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Redirect } from 'react-router';
-import { selectIsLoggedIn, login } from './../features/user/userSlice';
-import logo from './../assets/images/logo.png';
+import { selectIsLoggedIn, login } from '@/features/user/userSlice';
+import logo from '@images/logo.png';
 
 export default function OTP() {
   const isLoggedIn = useSelector(selectIsLoggedIn);

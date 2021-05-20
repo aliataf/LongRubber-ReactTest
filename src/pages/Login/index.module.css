@@ -1,0 +1,85 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.container > * {
+  margin-top: 10px;
+}
+
+.heroText {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.thirdPartyLoginContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 13px;
+  border: none;
+  border-radius: 29px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  height: 50px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.phoneInputClass {
+  border-radius: 20px !important;
+  padding-left: 60px !important;
+  height: 40px !important;
+}
+
+.phoneButtonClass {
+  border-radius: 20px 0 0 20px !important;
+  padding: 3px 6px !important;
+  background-color: white !important;
+}
+
+.signupButton {
+  background: var(--color-primary);
+}
+
+.socialButton {
+  background: transparent;
+  border: 1px solid #E2E2E2;
+  color: #2B2B2B;
+}
+
+.textColor {
+  color: #707070;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-color-link);
+  font-weight: bold;
+}

@@ -11,14 +11,11 @@ import OrderPage from './pages/Order';
 import OTP from "./pages/OTP";
 import { selectIsLoggedIn } from './features/user/userSlice';
 import { useSelector } from 'react-redux';
-import './App.css';
 
 function App() {
   return (
     <Router>
       <div>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/login">
             <LoginPage />

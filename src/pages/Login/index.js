@@ -1,7 +1,12 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { unwrapResult } from "@reduxjs/toolkit";
 import { Redirect } from "react-router";
-import { selectIsLoggedIn, login } from "@/features/user/userSlice";
+import {
+  selectIsLoggedIn,
+  login,
+  isValidLogin,
+} from "@/features/user/userSlice";
 import logo from "@images/logo.png";
 import googleLogo from "@images/logo-google.png";
 import facebookLogo from "@images/logo-facebook.png";
@@ -13,11 +18,21 @@ import "react-phone-input-2/lib/style.css";
 export default function Login() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const history = useHistory();
+  const dispatch = useDispatch();
   const [mobileNumber, setMobileNumber] = useState("");
 
-  const loginClick = () => {
-    //TODO: dispatch something to /login to ask for an OTP
-    history.push("/otp");
+  const loginClick = async (e) => {
+    e.preventDefault();
+    try {
+      //let res = await dispatch(isValidLogin(mobileNumber)).then(unwrapResult);
+      //console.log('res', res);
+      //if (!res) {
+        dispatch(login());
+        history.push("/otp");
+      //}
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const doNothing = () => {};

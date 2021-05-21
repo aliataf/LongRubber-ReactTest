@@ -1,6 +1,7 @@
 :root {
   --color-primary: #FF7010;
-  --text-color-link: #0978FF;
+  --background-color: #FFF5EF;
+  --text-link-color: #0978FF;
 }
 
 *,
@@ -16,4 +17,5 @@ body, html {
   padding: 0;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
 }

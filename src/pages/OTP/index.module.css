@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.125rem;
   max-width: 320px;
   margin: 0 auto;
 }
@@ -25,12 +24,28 @@
 .form {
   display: flex;
   flex-direction: column;
+  width: 400px;
+  margin-top: 20px;
 }
 
-.thirdPartyLoginContainer {
-  width: 100%;
+.digitsContainer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  outline: 0;
+  border: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.input:focus {
+  border: 2px solid var(--color-primary);
 }
 
 .button {
@@ -52,26 +67,8 @@
   opacity: 0.9;
 }
 
-.phoneInputClass {
-  border-radius: 20px !important;
-  padding-left: 60px !important;
-  height: 40px !important;
-}
-
-.phoneButtonClass {
-  border-radius: 20px 0 0 20px !important;
-  padding: 3px 6px !important;
-  background-color: white !important;
-}
-
-.signupButton {
+.verifyButton {
   background: var(--color-primary);
-}
-
-.socialButton {
-  background: transparent;
-  border: 1px solid #E2E2E2;
-  color: #2B2B2B;
 }
 
 .textColor {
